@@ -2,6 +2,9 @@ const r = Math.round;
 const a = document.querySelector('.a');
 const b = document.querySelector('.b');
 const result = document.querySelector('.result');
+const ett = document.querySelectorAll(".ett");
+const två = document.querySelectorAll(".två");
+const tre = document.querySelectorAll(".tre");
 const pInput = document.querySelector('[data-p]');
 const aInput = document.querySelector('[data-a]');
 const bInput = document.querySelector('[data-b]');
@@ -11,6 +14,22 @@ update();
 
 function update() {
 	result.style.background = blend(aInput.value, bInput.value, Number(pInput.value));
+	reset();
+}
+
+function reset() {
+	const colormix = blend(aInput.value, bInput.value, Number(pInput.value));
+	const boxshadow = 'inset 0 0 10vw ' + colormix;
+	for(var i = 0; i < två.length; i++){
+		två[i].style['boxShadow'] = boxshadow;
+	}
+	for(var i = 0; i < ett.length; i++){
+		ett[i].style['boxShadow'] = boxshadow;
+	}
+	for(var i = 0; i < tre.length; i++){
+		tre[i].style['boxShadow'] = boxshadow;
+	}
+	console.log(colormix);
 }
 
 function toRGBA(d) {
