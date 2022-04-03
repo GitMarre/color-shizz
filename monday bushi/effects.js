@@ -19,22 +19,18 @@ function update() {
 
 function reset() {
 	const colormix = blend(aInput.value, bInput.value, Number(pInput.value));
-	const boxshadow = 'inset 0 0 10vw ' + colormix;
+	const boxshadow = 'inset 0 0 100vw ' + colormix;
 	for(var i = 0; i < 2; i++){
-		två[i].style['boxShadow'] = boxshadow;
-		två[i].style.background = colormix;
-		två[i].style['opacity'] = '1';
+		två[i].style['boxShadow'] = 'inset 0 0 100vw ' + aInput.value;
 	}
 	for(var i = 0; i < 2; i++){
-		ett[i].style['boxShadow'] = boxshadow;
-		ett[i].style.background = colormix;
-		ett[i].style['opacity'] = '0.4';
+		ett[i].style['boxShadow'] = 'inset 0 0 100vw ' + bInput.value;
 	}
 	for(var i = 0; i < 2; i++){
 		tre[i].style['boxShadow'] = boxshadow;
-		tre[i].style.background = colormix;
-		tre[i].style['opacity'] = '0.7';
 	}
+	console.log(aInput.value);
+	console.log(boxshadow)
 }
 
 function toRGBA(d) {

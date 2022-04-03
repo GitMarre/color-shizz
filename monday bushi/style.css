@@ -42,6 +42,8 @@ p{
 
 .sider{
     width: 20%;
+    max-width: 200px;
+    min-width: 110px;
     height: calc(100vh - 37px);
     float:left;
     background-color: #212121;
