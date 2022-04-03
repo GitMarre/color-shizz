@@ -26,7 +26,7 @@
             <p id="navtext">Lets mix some colors!</p>
             <div class="colors">
                 <div class="b" title="Choose a color to mix!">
-                    <input type="color" data-b value="#004CFF">
+                    <input type="color" data-b value="#ffae00">
                 </div>
                 <p id="btext" class="resulttext hexcode">Lets mix some colors!</p>
                 <div class="slider" title="Establish dominance!">
@@ -37,14 +37,17 @@
                 </div>
                 <p id="atext" class="resulttext hexcode">Lets mix some colors!</p>
             </div>
+            <label class="switch" title="Toggle lightmode">
+                <input id="checkinput" type="checkbox" onchange='handleChange(this)'>
+                <span class="sliderbox round"></span>
+            </label>
         </div>
         <div class="resultbody">
             <div class="resultinfo">
                     <p class="resulttext">Mixing result:</p>
                     <div class="result">
-                        <p class="resulttext final"><span id="hex"></span> <span id="copy" title="Copy to clipboard" onclick="copyText()"><i class="fa-solid fa-copy"></i></span></i></p>
+                        <p id="nochange" class="resulttext final"><span id="hex"></span> <span id="copy" title="Copy to clipboard" onclick="copyText()"><i id="blabla" class="fa-solid fa-copy"></i></span></i></p>
                     </div>
-                   
             </div>
             <div class="waves">
                 <div class="wave ett"></div>

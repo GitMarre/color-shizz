@@ -102,3 +102,27 @@ function copyText() {
 	/* Alert the copied text */
 	alert(copyText.innerHTML + " has been copied to the clipboard!");
   }
+
+  function handleChange(checkbox) {
+	var all = document.getElementsByTagName("*");
+    if(checkbox.checked == true){
+        document.getElementsByClassName("resultbody")[0].style.backgroundColor ='#FFFFFF';
+		for (var i=0, max=all.length; i < max; i++) {
+			all[i].style.color = 'black';
+	   }
+	   document.getElementsByTagName("body")[0].style["fontWeight"] = 'bold';
+	   document.getElementsByClassName("sider")[0].style.backgroundColor = '#ECECEC';
+    }else{
+		document.getElementsByClassName("resultbody")[0].style.backgroundColor ='#303030';
+		for (var i=0, max=all.length; i < max; i++) {
+			all[i].style.color = '#FFFFFF';
+	   }
+	   document.getElementsByClassName("sider")[0].style.backgroundColor = '#212121';
+	   document.getElementsByTagName("body")[0].style["fontWeight"] = 'normal';
+   }
+   var bajs = document.getElementById("hex");
+   var bajs2 = document.getElementById("blabla");
+   bajs.style.color = '#FFFFFF';
+   bajs.style["fontWeight"] = 'normal';
+   bajs2.style.color = '#FFFFFF';
+}
