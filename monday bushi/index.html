@@ -19,7 +19,7 @@
 <body>
     <div class="wrapper">
         <div class="header">
-            <h1 class="titletext">Color mixer 69</h1>
+            <h1 class="titletext">CM</h1>
         </div>
         <div class="sider">
             <p id="navtext">Lets mix some colors!</p>
@@ -27,12 +27,14 @@
                 <div class="b" title="Choose a color to mix!">
                     <input type="color" data-b value="#004CFF">
                 </div>
+                <p id="btext" class="resulttext hexcode">Lets mix some colors!</p>
                 <div class="slider" title="Establish dominance!">
                     <input type="range" data-p min="0" max="1" step="0.01" value="0.5"/>
                 </div>
                 <div class="a" title="Choose a color to mix!">
                     <input type="color" data-a value="#FF0000">
                 </div>
+                <p id="atext" class="resulttext hexcode">Lets mix some colors!</p>
             </div>
         </div>
         <div class="resultbody">
@@ -42,7 +44,7 @@
                 </div>
                 <div id="column2" class="resultcolumn">
                     <div class="result"></div>
-                    <pclass="resulttext"><span id="hex"></span> <span title="Copy to clipboard"><i class="fa-solid fa-copy"></i></span></i></p>
+                    <p class="resulttext"><span id="hex"></span> <span id="copy" title="Copy to clipboard" onclick="copyText()"><i class="fa-solid fa-copy"></i></span></i></p>
                 </div>
             </div>
             <div class="waves">

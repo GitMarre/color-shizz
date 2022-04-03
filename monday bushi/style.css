@@ -22,6 +22,7 @@ body{
 
 .titletext{
     margin: 0;
+    margin-left: 1em;
     padding: 0;
     /* opacity: 70%; */
 }
@@ -38,10 +39,22 @@ body{
     font-size: 0.8em;
 }
 
+.hexcode{
+    padding-top: 0;
+    font-size: 0.8em;
+}
+
+#copy :hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
 .header{
     width: 100%;
     height: fit-content;
     background-color: #212121;
+    text-align: left;
 }
 
 .sider{
@@ -127,7 +140,7 @@ input[type="range"] {
     height: calc(100vh - 37px);
     position: relative;
     float:right;
-    background-color: #FFFFFF;
+    background-color: #303030;
     overflow: hidden;
 }
 
@@ -150,7 +163,7 @@ input[type="range"] {
     float: left;
 }
 #column2 {
-    width: calc(75% - 1em);
+    width: 25%;
     float: right;
 }
 
@@ -180,7 +193,7 @@ input[type="color"]::-webkit-color-swatch, .result {
 .ett {
   content: '';
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
   width: 250vw;
   height: 250vw;
@@ -197,7 +210,7 @@ input[type="color"]::-webkit-color-swatch, .result {
 .två{
     content: '';
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
   width: 260vw;
   height: 260vw;
@@ -211,7 +224,7 @@ input[type="color"]::-webkit-color-swatch, .result {
 .tre {
       content: '';
   position: absolute;
-  top: 45%;
+  top: 55%;
   left: 50%;
   width: 240vw;
   height: 240vw;

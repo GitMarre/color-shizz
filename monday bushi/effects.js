@@ -2,6 +2,8 @@ const r = Math.round;
 const a = document.querySelector('.a');
 const b = document.querySelector('.b');
 const hex = document.querySelector('#hex');
+const atext = document.querySelector('#atext');
+const btext = document.querySelector('#btext');
 const result = document.querySelector('.result');
 const ett = document.querySelectorAll(".ett");
 const två = document.querySelectorAll(".två");
@@ -31,8 +33,8 @@ function reset() {
 		tre[i].style['boxShadow'] = boxshadow;
 	}
 	hex.innerHTML = colormix;
-	console.log(aInput.value);
-	console.log(boxshadow)
+	atext.innerHTML = aInput.value;
+	btext.innerHTML = bInput.value;
 }
 
 function toRGBA(d) {
@@ -85,3 +87,18 @@ function blend(from, to, p = 0.5) {
 		r(((t[2] - f[2]) * p) + f[2])
 	).toString(16).slice(f[3] > -1 || t[3] > -1 ? 1 : 3);
 }
+
+function copyText() {
+	/* Get the text field */
+	var copyText = document.getElementById("hex");
+  
+	/* Select the text field */
+	// copyText.select();
+	// copyText.setSelectionRange(0, 99999); /* For mobile devices */
+  
+	 /* Copy the text inside the text field */
+	navigator.clipboard.writeText(copyText.innerHTML);
+  
+	/* Alert the copied text */
+	alert(copyText.innerHTML + " has been copied to the clipboard!");
+  }
