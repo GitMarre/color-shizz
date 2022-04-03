@@ -22,7 +22,7 @@
             <h1 class="titletext">Color mixer 69</h1>
         </div>
         <div class="sider">
-            <p>Lets mix some colors!</p>
+            <p id="navtext">Lets mix some colors!</p>
             <div class="colors">
                 <div class="b" title="Choose a color to mix!">
                     <input type="color" data-b value="#004CFF">
@@ -34,19 +34,28 @@
                     <input type="color" data-a value="#FF0000">
                 </div>
             </div>
-            <div class="resultinfo">
-                <div class="result"></div>
-            </div>
         </div>
         <div class="resultbody">
-            <div class="wave ett"></div>
-            <div class="wave ett"></div>
-            <div class="wave två" ></div>
-            <div class="wave två" ></div>
-            <div class="wave tre"></div>
-            <div class="wave tre"></div>
+            <div class="resultinfo">
+                <div id="column1" class="resultcolumn">
+                    <p class="resulttext">Mixing result:</p>
+                </div>
+                <div id="column2" class="resultcolumn">
+                    <div class="result"></div>
+                    <pclass="resulttext"><span id="hex"></span> <span title="Copy to clipboard"><i class="fa-solid fa-copy"></i></span></i></p>
+                </div>
+            </div>
+            <div class="waves">
+                <div class="wave ett"></div>
+                <div class="wave ett"></div>
+                <div class="wave två" ></div>
+                <div class="wave två" ></div>
+                <div class="wave tre"></div>
+                <div class="wave tre"></div>
+            </div>
         </div>
     </div>
   <script src="effects.js"></script>
+  <script src="https://kit.fontawesome.com/5837b30a5b.js" crossorigin="anonymous"></script>
 </body>
 </html>

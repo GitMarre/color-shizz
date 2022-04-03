@@ -1,6 +1,7 @@
 const r = Math.round;
 const a = document.querySelector('.a');
 const b = document.querySelector('.b');
+const hex = document.querySelector('#hex');
 const result = document.querySelector('.result');
 const ett = document.querySelectorAll(".ett");
 const två = document.querySelectorAll(".två");
@@ -29,6 +30,7 @@ function reset() {
 	for(var i = 0; i < 2; i++){
 		tre[i].style['boxShadow'] = boxshadow;
 	}
+	hex.innerHTML = colormix;
 	console.log(aInput.value);
 	console.log(boxshadow)
 }
