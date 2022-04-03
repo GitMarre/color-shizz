@@ -20,16 +20,21 @@ function update() {
 function reset() {
 	const colormix = blend(aInput.value, bInput.value, Number(pInput.value));
 	const boxshadow = 'inset 0 0 10vw ' + colormix;
-	for(var i = 0; i < två.length; i++){
+	for(var i = 0; i < 2; i++){
 		två[i].style['boxShadow'] = boxshadow;
+		två[i].style.background = colormix;
+		två[i].style['opacity'] = '1';
 	}
-	for(var i = 0; i < ett.length; i++){
+	for(var i = 0; i < 2; i++){
 		ett[i].style['boxShadow'] = boxshadow;
+		ett[i].style.background = colormix;
+		ett[i].style['opacity'] = '0.4';
 	}
-	for(var i = 0; i < tre.length; i++){
+	for(var i = 0; i < 2; i++){
 		tre[i].style['boxShadow'] = boxshadow;
+		tre[i].style.background = colormix;
+		tre[i].style['opacity'] = '0.7';
 	}
-	console.log(colormix);
 }
 
 function toRGBA(d) {
