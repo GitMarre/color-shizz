@@ -114,6 +114,12 @@ input[type="range"] {
     z-index: 100;
 }
 
+.resultinfo{
+    width: 100%;
+    height: 20vh;
+    background-color: aqua;
+}
+
 .resultbody{
     width: 80%;
     height: calc(100vh - 37px);
@@ -124,19 +130,13 @@ input[type="range"] {
 }
 
 input[type="color"] {
-	 -webkit-appearance: none;
 	border: none;
-	width: 32px;
-	height: 32px; 
-    background-color: #303030;
+    background-color: transparent;
 }
-input[type="color"]::-webkit-color-swatch-wrapper {
-	padding: 0;
-    background-color: #303030;
-}
-input[type="color"]::-webkit-color-swatch {
+input[type="color"]::-webkit-color-swatch, .result {
 	border: none;
-    background-color: #424242;
+    padding: 0;
+    border-radius: 0.5em;
 }
 
 /* BAJS */
